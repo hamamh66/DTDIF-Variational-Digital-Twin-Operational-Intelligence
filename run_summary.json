@@ -1,0 +1,140 @@
+{
+  "framework_name": "Digital Twin Decision Intelligence Framework",
+  "framework_abbreviation": "DTDIF",
+  "base_dir": "/content/drive/MyDrive/Outputs/DTDIF_Final",
+  "cyber_path": "/content/drive/MyDrive/Datasets/fake_ids_healthcare.csv",
+  "video_path": "/content/drive/MyDrive/Outputs/others/video_events_simulated.csv",
+  "best_cyber_model": "ExtraTrees",
+  "best_video_model": "RandomForest",
+  "cyber_n_classes": 4,
+  "video_n_classes": 2,
+  "figures_dir": "/content/drive/MyDrive/Outputs/DTDIF_Final/figures",
+  "tables_dir": "/content/drive/MyDrive/Outputs/DTDIF_Final/tables",
+  "models_dir": "/content/drive/MyDrive/Outputs/DTDIF_Final/models",
+  "outputs_dir": "/content/drive/MyDrive/Outputs/DTDIF_Final/outputs",
+  "num_figures": 19,
+  "num_tables": 16,
+  "best_model_summary": [
+    {
+      "accuracy": 0.5133333333333333,
+      "balanced_accuracy": 0.232183908045977,
+      "precision": 0.37151211361737674,
+      "recall": 0.5133333333333333,
+      "f1": 0.41596736596736594,
+      "roc_auc": 0.4940431468389049,
+      "pr_auc": 0.4227097478356061,
+      "brier": NaN,
+      "dataset": "cyber",
+      "model": "ExtraTrees",
+      "n_classes": 4,
+      "time_sec": 0.46648550033569336
+    },
+    {
+      "accuracy": 0.9999810466063949,
+      "balanced_accuracy": 0.9999474513925382,
+      "precision": 1.0,
+      "recall": 0.9998949027850762,
+      "f1": 0.9999474486310368,
+      "roc_auc": 0.9999999975697819,
+      "pr_auc": 0.9999999889557362,
+      "brier": 2.4925081176573458e-05,
+      "dataset": "video",
+      "model": "RandomForest",
+      "n_classes": 2,
+      "time_sec": 28.75763201713562
+    }
+  ],
+  "decision_summary": [
+    {
+      "dataset": "cyber",
+      "mean_free_energy": 0.571139501924202,
+      "mean_adaptive_free_energy": 0.5446323761892422,
+      "mean_uncertainty": 0.9196328442453553,
+      "mean_model_risk": 0.5906225023808032,
+      "mean_model_confidence": 0.41497071679174874,
+      "mean_severity_potential": 0.423295271350428,
+      "high_risk_rate": 0.16
+    },
+    {
+      "dataset": "video",
+      "mean_free_energy": 0.1646045844699324,
+      "mean_adaptive_free_energy": 0.25155003045219954,
+      "mean_uncertainty": 0.003424277811431618,
+      "mean_model_risk": 0.1803602505065762,
+      "mean_model_confidence": 0.9995449297783123,
+      "mean_severity_potential": 0.3899364472238507,
+      "high_risk_rate": 0.042872576334792745
+    }
+  ],
+  "digital_twin_summary": [
+    {
+      "dataset": "cyber",
+      "mean_risk": 0.5446323761892422,
+      "mean_effective_risk": 0.5446323761892422,
+      "max_cumulative_risk": 14.967777696055796,
+      "mean_workload": 0.45252441442026886,
+      "final_resilience": 0.03971393694052044,
+      "min_resilience": 0.0,
+      "mean_recovery": 0.018719754108583005,
+      "mean_mitigation": 0.0030600000000000002
+    },
+    {
+      "dataset": "video",
+      "mean_risk": 0.25155003045219954,
+      "mean_effective_risk": 0.02515500304521996,
+      "max_cumulative_risk": 2.041191775333851,
+      "mean_workload": 0.15644131081670187,
+      "final_resilience": 0.9190062910179981,
+      "min_resilience": 0.0,
+      "mean_recovery": 0.0052380120751736965,
+      "mean_mitigation": 0.001043938704725081
+    }
+  ],
+  "graph_summary": {
+    "num_nodes": 134,
+    "num_edges": 360,
+    "sample_size": 120,
+    "top_degree_nodes": [
+      [
+        "uncertainty_0",
+        118
+      ],
+      [
+        "action_observe",
+        99
+      ],
+      [
+        "energy_1",
+        73
+      ],
+      [
+        "action_investigate",
+        16
+      ],
+      [
+        "energy_2",
+        14
+      ],
+      [
+        "energy_0",
+        12
+      ],
+      [
+        "energy_6",
+        9
+      ],
+      [
+        "energy_7",
+        6
+      ],
+      [
+        "energy_5",
+        5
+      ],
+      [
+        "action_contain",
+        4
+      ]
+    ]
+  }
+}

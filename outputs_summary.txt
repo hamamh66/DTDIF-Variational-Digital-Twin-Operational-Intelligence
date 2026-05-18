@@ -1,0 +1,90 @@
+DTDIF — Digital Twin Decision Intelligence Framework
+Final complete Colab + Google Drive notebook
+========================================================================
+
+Timestamp: 2026-05-18 22:10:12
+BASE_DIR: /content/drive/MyDrive/Outputs/DTDIF_Final
+
+Generated folders:
+ - Figures: /content/drive/MyDrive/Outputs/DTDIF_Final/figures
+ - Tables: /content/drive/MyDrive/Outputs/DTDIF_Final/tables
+ - Models: /content/drive/MyDrive/Outputs/DTDIF_Final/models
+ - Outputs: /content/drive/MyDrive/Outputs/DTDIF_Final/outputs
+
+Best models:
+ - Cyber: ExtraTrees | classes: 4
+ - Video: RandomForest | classes: 2
+
+Best model summary:
+ accuracy  balanced_accuracy  precision   recall       f1  roc_auc  pr_auc    brier dataset        model  n_classes  time_sec
+ 0.513333           0.232184   0.371512 0.513333 0.415967 0.494043 0.42271      NaN   cyber   ExtraTrees          4  0.466486
+ 0.999981           0.999947   1.000000 0.999895 0.999947 1.000000 1.00000 0.000025   video RandomForest          2 28.757632
+
+Decision summary:
+dataset  mean_free_energy  mean_adaptive_free_energy  mean_uncertainty  mean_model_risk  mean_model_confidence  mean_severity_potential  high_risk_rate
+  cyber          0.571140                   0.544632          0.919633         0.590623               0.414971                 0.423295        0.160000
+  video          0.164605                   0.251550          0.003424         0.180360               0.999545                 0.389936        0.042873
+
+Digital twin summary:
+dataset  mean_risk  mean_effective_risk  max_cumulative_risk  mean_workload  final_resilience  min_resilience  mean_recovery  mean_mitigation
+  cyber   0.544632             0.544632            14.967778       0.452524          0.039714             0.0       0.018720         0.003060
+  video   0.251550             0.025155             2.041192       0.156441          0.919006             0.0       0.005238         0.001044
+
+Action counts:
+dataset      action  count
+  cyber     contain     18
+  cyber    escalate      6
+  cyber investigate     48
+  cyber     monitor     63
+  cyber     observe     15
+  video     contain   2251
+  video    escalate     11
+  video investigate   7061
+  video     monitor    223
+  video     observe  43215
+
+Generated figures:
+ - fig_01_model_f1_comparison.png
+ - fig_02_model_roc_auc_comparison.png
+ - fig_03_balanced_accuracy_comparison.png
+ - fig_04_confusion_matrix_cyber.png
+ - fig_04_confusion_matrix_video.png
+ - fig_05_calibration_cyber.png
+ - fig_05_calibration_video.png
+ - fig_06_adaptive_free_energy_distribution.png
+ - fig_07_action_distribution.png
+ - fig_08_uncertainty_vs_free_energy.png
+ - fig_09_model_risk_vs_free_energy.png
+ - fig_10_digital_twin_resilience.png
+ - fig_11_effective_risk_trajectory.png
+ - fig_12_workload_trajectory.png
+ - fig_13_effective_risk_vs_resilience.png
+ - fig_14_permutation_importance_cyber.png
+ - fig_14_permutation_importance_video.png
+ - fig_15_probability_robustness.png
+ - fig_16_incident_action_free_energy_graph.png
+
+Generated tables:
+ - table_action_counts.csv
+ - table_best_model_summary.csv
+ - table_calibration_bins.csv
+ - table_classification_reports.csv
+ - table_cv_stability.csv
+ - table_dataset_overview.csv
+ - table_decision_layer_outputs.csv
+ - table_decision_summary.csv
+ - table_digital_twin_state.csv
+ - table_digital_twin_summary.csv
+ - table_model_performance.csv
+ - table_permutation_importance_all.csv
+ - table_permutation_importance_cyber.csv
+ - table_permutation_importance_video.csv
+ - table_probability_robustness.csv
+ - table_target_distribution.csv
+
+Generated models:
+ - best_cyber_model.pkl
+ - best_video_model.pkl
+
+Run summary JSON:
+/content/drive/MyDrive/Outputs/DTDIF_Final/outputs/run_summary.json

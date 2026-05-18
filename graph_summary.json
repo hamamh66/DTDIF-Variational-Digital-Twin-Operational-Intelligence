@@ -1,0 +1,47 @@
+{
+  "num_nodes": 134,
+  "num_edges": 360,
+  "sample_size": 120,
+  "top_degree_nodes": [
+    [
+      "uncertainty_0",
+      118
+    ],
+    [
+      "action_observe",
+      99
+    ],
+    [
+      "energy_1",
+      73
+    ],
+    [
+      "action_investigate",
+      16
+    ],
+    [
+      "energy_2",
+      14
+    ],
+    [
+      "energy_0",
+      12
+    ],
+    [
+      "energy_6",
+      9
+    ],
+    [
+      "energy_7",
+      6
+    ],
+    [
+      "energy_5",
+      5
+    ],
+    [
+      "action_contain",
+      4
+    ]
+  ]
+}

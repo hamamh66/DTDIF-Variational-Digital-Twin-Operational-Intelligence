@@ -1,0 +1,60 @@
+{
+  "framework_name": "Digital Twin Decision Intelligence Framework",
+  "framework_abbreviation": "DTDIF",
+  "experiment_name": "dtdif_final_complete_colab_drive",
+  "seed": 42,
+  "test_size": 0.25,
+  "n_splits": 5,
+  "n_synthetic_cyber": 3500,
+  "n_synthetic_video": 2800,
+  "cyber_generator": {
+    "n_classes": 4,
+    "n_features": 20,
+    "n_informative": 12,
+    "n_redundant": 5,
+    "class_sep": 1.45,
+    "flip_y": 0.025,
+    "weights": [
+      0.55,
+      0.22,
+      0.15,
+      0.08
+    ]
+  },
+  "video_generator": {
+    "n_classes": 2,
+    "n_features": 16,
+    "n_informative": 5,
+    "n_redundant": 5,
+    "n_clusters_per_class": 3,
+    "class_sep": 0.42,
+    "flip_y": 0.18,
+    "weights": [
+      0.72,
+      0.28
+    ]
+  },
+  "free_energy_weights": {
+    "uncertainty": 0.3,
+    "severity": 0.35,
+    "context": 0.2,
+    "model_risk": 0.15,
+    "confidence_penalty": 0.1
+  },
+  "decision_thresholds": {
+    "monitor": 0.35,
+    "investigate": 0.55,
+    "contain": 0.72,
+    "escalate": 0.86
+  },
+  "twin_dynamics": {
+    "passive_recovery": 0.02,
+    "risk_drain": 0.06,
+    "mitigation_gain": 0.075,
+    "workload_penalty": 0.035,
+    "workload_decay": 0.9,
+    "risk_decay": 0.96,
+    "risk_volume_scaling": true
+  },
+  "max_permutation_features": 12
+}
