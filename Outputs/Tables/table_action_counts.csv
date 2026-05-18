@@ -1,0 +1,11 @@
+dataset,action,count
+cyber,contain,18
+cyber,escalate,6
+cyber,investigate,48
+cyber,monitor,63
+cyber,observe,15
+video,contain,2251
+video,escalate,11
+video,investigate,7061
+video,monitor,223
+video,observe,43215

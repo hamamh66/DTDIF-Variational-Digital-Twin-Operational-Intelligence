@@ -1,0 +1,7 @@
+dataset,feature,importance_mean,importance_std
+video,authenticity_score,0.4110969707073098,0.0005541711176582703
+video,temporal_consistency,0.32991446746099723,0.001254879984862524
+video,timestamp,1.7518964182043167e-05,2.477555674497392e-05
+video,camera_id,0.0,0.0
+video,zone_id,0.0,0.0
+video,uncertainty_score,0.0,0.0
